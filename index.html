@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="main.css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css/all.min.css" />
+    <link rel="stylesheet" href="main.css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Bookmarker</h1>
+        <div class="dotted"></div>
+        <h2 class="fs-4 fw-bold">
+          <i class="fa-solid fa-bookmark mx-3"></i>Bookmark your favorite
+          sites<i class="fa-solid fa-bookmark mx-3"></i>
+        </h2>
+      </div>
+      <form action="">
+        <label for="siteName" class="mb-2 fw-semibold"
+          ><i class="fa-solid fa-book-bookmark me-1"></i> Site Name</label
+        >
+        <input
+          type="text"
+          placeholder="Bookmark Name"
+          class="form-control"
+          id="siteName"
+        />
+        <label for="siteUrl" class="mb-2 fw-semibold mt-4"
+          ><i class="fa-solid fa-link me-1"></i> Site Name</label
+        >
+        <input
+          type="text"
+          placeholder="Bookmark Name"
+          class="form-control"
+          id="siteUrl"
+        />
+        <div class="text-center">
+          <button class="btn btn-danger mt-4 add">Submit</button>
+        </div>
+      </form>
+      <div class="dotted"></div>
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody class="fill">
+          <tr>
+            <td>Index</td>
+            <td>Website</td>
+            <td>Visit</td>
+            <td>Delete</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="overlay d-none">
+      <div class="textbox bg-white position-fixed">
+        <div class="colers"></div>
+        <button class="border-0 bg-white position-fixed close">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <p>Site Name or Url is not Valid , Please follow the rules below:</p>
+        <p>
+          <i class="fa-regular fa-circle-right"></i> Site name must contain at
+          least 3 characters
+        </p>
+        <p>
+          <i class="fa-regular fa-circle-right"></i> Site URL must be a vaild
+          one
+        </p>
+      </div>
+      <div class="over"></div>
+    </div>
+    <script src="/main.js/main.js"></script>
+  </body>
+</html>
